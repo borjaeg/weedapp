@@ -25,17 +25,17 @@ $(document).ready(function() {
         cameraSensor.getContext("2d").drawImage(cameraView, 0, 0);
         cameraOutput.src = cameraSensor.toDataURL("image/webp");
         cameraOutput.classList.add("taken");
-        analyse_weed(cameraSensor.toDataURL());
+        //analyse_weed(cameraSensor.toDataURL());
     };
     // Start the video stream when the window loads
     window.addEventListener("load", cameraStart, false);
 
-    function analyse_weed(photo){
+    /*function analyse_weed(photo){
 
         $.post( "https://platon.cps.unizar.es:5000/weed_detection", { image: photo } );
         console.log(photo);
 
-    }
+    }*/
 });
 
 
