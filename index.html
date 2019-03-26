@@ -10,17 +10,10 @@
 </head>
 <body>
     <!-- Camera -->
-    <main id="camera">
-        <!-- Camera sensor -->
-        <canvas id="camera--sensor"></canvas>
-        <!-- Camera view -->
-        <video id="camera--view" autoplay playsinline></video>
-        <!-- Camera output -->
-        <img src="//:0" alt="" id="camera--output">
-        <!-- Camera trigger -->
-        <button id="camera--trigger">Take a picture</button>
-    </main>
+    <input type="file" capture="camera" accept="image/*" id="cameraInput" name="cameraInput">
+    
     <!-- Reference to your JavaScript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
