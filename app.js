@@ -30,12 +30,12 @@ $(document).ready(function() {
     // Start the video stream when the window loads
     window.addEventListener("load", cameraStart, false);
 
-    /*function analyse_weed(photo){
+    function analyse_weed(photo){
 
-        $.post( "https://platon.cps.unizar.es:5000/weed_detection", { image: photo } );
+        $.post( "https://155.210.155.161:5000/weed_detection", { image: photo } );
         console.log(photo);
 
-    }*/
+    }
 });
 
 
