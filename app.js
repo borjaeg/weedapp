@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     function analyse_weed(photo){
 
-        $.post( "https://155.210.155.161:5000/weed_detection", { image: photo } );
+        $.post( "https://weedsapp.herokuapp.com/weed_detection", { image: photo } );
         console.log(photo);
 
     }
