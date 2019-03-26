@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     function analyse_weed(photo){
 
-        $.post( "http://155.210.158.161:5000/weed_detection", { image: photo } );
+        $.post( "https://155.210.158.161:5000/weed_detection", { image: photo } );
         console.log(photo);
 
     }
